@@ -1,0 +1,4 @@
+flask
+flask-cors
+gunicorn    # this is a list of dependencies for Render
+uvicorn

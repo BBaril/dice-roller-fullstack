@@ -1,0 +1,67 @@
+/* Container: centers everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 1.5rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.title-icon {
+ height: 2rem;
+ width: auto;
+ margin-left: 1.25rem;
+ }
+
+/* Dice styling */
+.dice {
+  font-size: 5rem;
+  color: #00e5e5;
+  text-shadow: 1px 1px 2px black; /* Black shadow to make it pop more */
+  transition: transform 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+/* Roll button styling */
+.roll-button {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* The shake/roll animation */
+.dice-rolled {
+  animation: rollAnimation 0.5s ease-in-out;
+}
+
+@keyframes rollAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
